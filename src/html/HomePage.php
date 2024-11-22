@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>XP Game Reviews</title>
-  <link rel="stylesheet" href="/src/css/header.css">
-    <link rel="stylesheet" href="/src/css/homepage.css">
+  <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php
+        require_once('config.inc.php');
+        $mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+    ?>
     <div class="navigation-bar">
         <div class="nav-shell">
             <ul>
                 <li class="otr-logo">
-                    <img src=/src/images/1.svg alt="XP Review Logo"/>
+                    <img src=/images/XP-Review-Logo.svg alt="XP Review Logo"/>
                 </li>
                 <div id="title">
                     XP Reviews
                 </div>
                 <div class="nav-toggle">
                     <li class="link">
-                        <a href=""> Home </a>
+                        <a href="HomePage.php"> Home </a>
+                    </li>
+                    <li class="link">
+                        <a href="gameList.php"> Game Reviews </a>
+                    </li>
+                    <li class="link">
+                        <a href="addReview.php">Add Review</a>
                     </li>
                     <li class="link">
                         <a href="">Sign In</a>
