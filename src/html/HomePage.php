@@ -70,21 +70,21 @@
 
         </section>
     </div>
-    <div class=GameList>
-        <div class="WiiGames">
-            <h3>Iconic Wii Games</h3>
-            <div class="break-line">
-                <hr>
+    </div>
+    <div class="container">
+            <div class="card-wrapper">
+                <ul class="card-list">
+                    <li class="card-item">
+                        <a href="#" class="cardlink">
+                            <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
+                            <p>Super Mario Bros.Wii</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
         </div>
-
-
-<!--        <div class="New Releases">-->
-<!--            <h3>New Releases</h3>-->
-<!--        </div>-->
-<!--        <div class="break-line">-->
-<!--            <hr>-->
-<!--        </div>-->
-    </div>
 </body>
 </html>
