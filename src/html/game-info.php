@@ -207,14 +207,17 @@
         <!-- User Reviews -->
 
         <!-- Grid Div -->
-        <div class="review-grid" id="user-reviews-section">
                 <!-- User Score -->
                 <?php
                 if ($result = $mysqli->query($SQLReviewCount)) {
                     $row = $result->fetch_assoc();
                     if ($row ['count'] > 0) {
+                        echo "<div id='reviewHeader'>";
+                        echo "<h2>Reviews</h2>";
+                        echo "</div>";
                         if ($output = $mysqli -> query($SQL)) {
                             while ($obj=$output->fetch_object()) {
+                                echo "<div class='review-grid' id='user-reviews-section'>";
                                 echo "<div class='user-review-container'>";
                                     echo "<div>";
                                     echo "<p class='game-score'>$obj->Score</p>";
@@ -229,9 +232,15 @@
                                     
                                     echo "</div>";
                                 echo "</div>";
+                                echo "</div>";
                             }
                             $output -> free_result();
                         }
+                    }
+                    else {
+                        echo "<div id='reviewHeader'>";
+                        echo "<h2>Be the first to review this game!</h2>";
+                        echo "</div>";
                     }
                 }?>    
             <!--<div class="user-review-container">

@@ -19,7 +19,7 @@
     <div class="nav-shell">
         <ul>
             <li class="otr-logo">
-                <img src=../images/1.svg alt="XP Review Logo"/>
+                <img src=../images/XP-Review-Logo.svg alt="XP Review Logo"/>
             </li>
             <div id="title">
                 XP Reviews
@@ -60,10 +60,10 @@
 
         <div class="introduction-container">
             <div id="intro-text">
-                <p>Welcome to XP Reviews, your ultimate hub for all things gaming! Whether you’re a die-hard fan of RPGs, an adrenaline-seeker chasing high-octane action, or a casual gamer looking for your next relaxing adventure, we’ve got you covered.</p>
+                <p>Welcome to XP Reviews, your ultimate hub for all things gaming! Whether you're a die-hard fan of RPGs, an adrenaline-seeker chasing high-octane action, or a casual gamer looking for your next relaxing adventure, we've got you covered.</p>
                 <br>
                 <p>Dive into in-depth reviews, discover hidden gems, and stay updated on the latest releases. XP Reviews is more than
-                    just a site—it’s a community where gamers connect, explore, and celebrate their shared passion for gaming.</p>
+                    just a site—it's a community where gamers connect, explore, and celebrate their shared passion for gaming.</p>
             </div>
             <div id="HistoricTeamPhoto">
                 <img src="../images/updown-pyramids-4k_1608815943-2048x1152.jpg" alt="Historic Team Photo">

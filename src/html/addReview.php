@@ -46,6 +46,7 @@
         $mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
 
         $SQL="SELECT Game FROM GameNames ORDER BY Game";
+        
 
         ?>
         <div id="reviewContainer">

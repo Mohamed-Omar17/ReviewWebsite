@@ -299,6 +299,7 @@ hr {
 /* Game Decription */
 .game-desc-container {
     padding: 2rem;
+    padding-bottom: 0px;
 
     margin: 0 auto;
 
@@ -370,4 +371,8 @@ hr {
 
 #reviewBody {
     margin-top: 100px;
+}
+
+#reviewHeader {
+    text-align: center;
 }
