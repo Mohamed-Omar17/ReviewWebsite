@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>XP Game Reviews</title>
-    <link rel="stylesheet" href="/css/homepage.css">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/header.css">
     <!-- Linking Google Fonts for Oswald and icons-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
@@ -19,7 +19,7 @@
     <div class="nav-shell">
         <ul>
             <li class="otr-logo">
-                <img src=/src/images/1.svg alt="XP Review Logo"/>
+                <img src=../images/1.svg alt="XP Review Logo"/>
             </li>
             <div id="title">
                 XP Reviews
@@ -83,66 +83,189 @@
             <ul class="card-list">
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
+                        <img src="../images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
                         <p class="card-title">Super Mario Bros. Wii</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/Mario_&_Sonic.jpg" alt="Mario and Sonic Vancouver Olympic Games" class="card-image">
+                        <p class="card-title">Mario and Sonic Vancouver Olympic Games</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/SuperMarioGalaxy.jpg" alt="Super Mario Galaxy" class="card-image">
+                        <p class="card-title">Super Mario Galaxy</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/WiiSports.jpg" alt="Wii Sports" class="card-image">
+                        <p class="card-title">Wii Sports</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/SuperSmashBrosWii.jpg" alt="Super Smash Bros" class="card-image">
+                        <p class="card-title">Super Smash Bros</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/Donkey-Kong.jpg" alt="Donkey Kong" class="card-image">
+                        <p class="card-title">Donkey Kong Country Returns</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
                 <li class="card-item">
                     <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
+                        <img src="../images/Games/MarioGalaxy2.jpg" alt="Mario Galaxy 2" class="card-image">
+                        <p class="card-title">Super Mario Galaxy 2</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>
-                <li class="card-item">
-                    <a href="#" class="card-link">
-                        <img src="/src/images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
-                        <p class="card-title">Super Mario Bros. Wii</p>
-                        <button class="card-button material-symbols-rounded">arrow_forward</button>
-                    </a>
-                </li>
-
-                <!-- Add more card-items -->
             </ul>
         </div>
         <img src="/src/images/next.png" alt="frontbutton" class="frontBtn">
     </div>
+
+<h3>Storyline Games</h3>
+<div class="break-line">
+    <hr>
+</div>
+<div class="container">
+    <img src="/src/images/back.png" alt="backbutton" class="backBtn">
+    <div class="carousel">
+        <ul class="card-list">
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/RDR2.jpg" alt="Red Dead Redemption II" class="card-image">
+                    <p class="card-title">Red Dead Redemption II</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Spider-Man.jpg" alt="SpiderMan" class="card-image">
+                    <p class="card-title">Spider-Man</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Batman_Arkham_City_Game_Cover.jpg" alt="Batman_Arkham City" class="card-image">
+                    <p class="card-title">Batman: Arkham City</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Cover_art_of_Star_Wars_Jedi_Fallen_Order.jpg" alt="Jedi Fallen Order" class="card-image">
+                    <p class="card-title">Jedi Fallen Order</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Witcher_3_cover_art.jpg" alt="The Witcher 3: Wild Hunt" class="card-image">
+                    <p class="card-title">The Witcher 3: Wild Hunt</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Miles_Morales.jpg" alt="Miles Morales" class="card-image">
+                    <p class="card-title">Spider-Man: Miles Morales</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Watch_dogs.jpg" alt="Watch Dogs" class="card-image">
+                    <p class="card-title">Watch Dogs</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/God_OfWar_2018.jpg" alt="God of War 2018" class="card-image">
+                    <p class="card-title">God of War 2018</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <img src="/src/images/next.png" alt="frontbutton" class="frontBtn">
+</div>
+
+<h3>Shooter Games</h3>
+<div class="break-line">
+    <hr>
+</div>
+<div class="container">
+    <img src="/src/images/back.png" alt="backbutton" class="backBtn">
+    <div class="carousel">
+        <ul class="card-list">
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Fortnite.jpg" alt="Fortnite" class="card-image">
+                    <p class="card-title">Fortnite: Battle Royale</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/CalOfDuty_BO6.jpg" alt="COD BO6" class="card-image">
+                    <p class="card-title">Call of Duty: Black Ops 6</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Far_cry_6_cover.jpg" alt="Far-Cry6" class="card-image">
+                    <p class="card-title">Far Cry 6</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/CallOfDuty_ModernWarfare.jpg" alt="Call of Duty"  class="card-image">
+                    <p class="card-title">Call of Duty: MW</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Halo_Guardians.png" alt="Halo 5" class="card-image">
+                    <p class="card-title">Halo 5: Guardians</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/Borderlands_3_cover_art.jpg" alt="Borderlands 3" class="card-image">
+                    <p class="card-title">Borderlands 3</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../images/Games/BOCW_Cover_Art.jpg" alt="Coldwar" class="card-image">
+                    <p class="card-title">Call of Duty: Black Ops Cold War</p>
+                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <img src="/src/images/next.png" alt="frontbutton" class="frontBtn">
+</div>
+
 </body>
 <script src="/src/Javascript/scroll.js"></script>
 </html>
