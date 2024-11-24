@@ -184,14 +184,21 @@
         <div class="game-desc-container">
             <hr>
             <p>
-                Developed by Rocksteady Studios, Batman: Arkham City builds upon the intense, 
-                atmospheric foundation of Batman: Arkham Asylum, sending players soaring into Arkham City, 
-                the new maximum security "home" for all of Gotham City's thugs, gangsters and insane criminal 
-                masterminds. Set inside the heavily fortified walls of a sprawling district in the heart of Gotham 
-                City, this highly anticipated sequel introduces a brand-new story that draws together a 
-                new all-star cast of classic characters and murderous villains from the Batman 
-                universe, as well as a vast range of new and enhanced gameplay features to deliver the 
-                ultimate experience as the Dark Knight.
+                <?php
+                $SQLGameSummary="SELECT * FROM GameNames WHERE Game = '$gameName'";
+                $result = $mysqli->query($SQLGameSummary);
+
+                if ($result) {
+                    while ($obj=$result->fetch_object()) {
+                        if (isset($obj->GameSummary)) {
+                            echo "<p>".$obj->GameSummary."</p>";
+                        } else {
+                            echo "No image available";
+                        }
+                    }
+                    $result -> free_result();
+                }
+                ?>
             </p>
             <hr>
         </div>
