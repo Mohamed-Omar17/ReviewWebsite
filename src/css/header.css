@@ -141,3 +141,14 @@
         display: initial;
     }
 }
+#title {
+    color: white;
+    align-content: flex-start;
+    font-size: 50px; /* Default size for larger screens */
+}
+
+@media (max-width: 700px) {
+    #title {
+        font-size: 30px; /* Smaller size for smaller screens */
+    }
+}
