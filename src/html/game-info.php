@@ -191,6 +191,7 @@
                 if ($result) {
                     while ($obj=$result->fetch_object()) {
                         if (isset($obj->GameSummary)) {
+                            echo "<h2>Summary</h2>";
                             echo "<p>".$obj->GameSummary."</p>";
                         } else {
                             echo "No image available";
@@ -233,45 +234,26 @@
                         }
                     }
                 }?>    
-            <div class="user-review-container">
-                <!-- User Score -->
+            <!--<div class="user-review-container">
+                User Score
                 <div class="game-score">
                     54
                 </div>
     
-                <!-- Container for Username and Comment -->
+                Container for Username and Comment
                 <div>
-                    <!-- Username -->
+                    Username
                     <p>Mohammed</p>
     
-                    <!-- Review -->
+                    Review
                     <p>
                         Batman: Arkham City is an exhilarating open-world adventure, delivering 
                         a gripping narrative and fast-paced combat. The vast city is full of secrets 
                         and challenges, making it a must-play for any fan of the Dark Knight.
                     </p>
                 </div>
-            </div>
-    
-            <div class="user-review-container">
-                <!-- User Score -->
-                <div class="game-score">
-                    89
-                </div>
-    
-                <!-- Container for Username and Comment -->
-                <div>
-                    <!-- Username -->
-                    <p>Zachary</p>
-    
-                    <!-- Review -->
-                    <p>
-                        With its stunning visuals and intense gameplay, Batman: Arkham City perfectly 
-                        expands on the foundation of Arkham Asylum. It offers an immersive experience, 
-                        from engaging combat to a compelling story filled with iconic villains.
-                    </p>
-                </div>
-            </div>
+            </div>-->
+
         </div>
         </div>            
         <script>

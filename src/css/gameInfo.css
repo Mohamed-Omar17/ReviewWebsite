@@ -8,11 +8,15 @@ body {
     background-color: #1E1C1C;
 }
 
-p {
+p{
     font-family: Jost;
     font-size: 1rem;
     margin: 0;
 
+    color: white;
+}
+
+h2 {
     color: white;
 }
 
@@ -297,10 +301,12 @@ hr {
     padding: 2rem;
 
     margin: 0 auto;
+
+    text-align: center;
 }
 
 /* Game Description */
-.game-desc-container p {
+.game-desc-container p{
     padding: 0 2rem;
 
     text-align: center;
