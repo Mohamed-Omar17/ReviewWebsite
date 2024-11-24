@@ -14,11 +14,12 @@ CREATE TABLE Reviews.Reviews (
 CREATE TABLE Reviews.GameNames (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Game VARCHAR(255) NOT NULL,
-    Publisher VARCHAR(255) NOT NULL
+    Publisher VARCHAR(255) NOT NULL,
+    ImageData VARCHAR(255)
 );
-INSERT INTO GameNames (Game, Publisher)
+INSERT INTO GameNames (Game, Publisher, ImageData)
 VALUES
-    ('Super Mario Bros. Wii', 'Nintendo'),
+    ('Super Mario Bros. Wii', 'Nintendo', '/images/SuperMarioBrosWii.jpg'),
     ('Mario and Sonic Vancouver Olympic Games', 'Nintendo'),
     ('Super Mario Galaxy', 'Nintendo'),
     ('Wii Sports', 'Nintendo'),

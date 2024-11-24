@@ -52,31 +52,42 @@
 
         <!-- Game Info Main Card -->
     <div id="reviewBody">
+        <?php
+            if (isset($_GET['game'])) {
+                $gameName = htmlspecialchars($_GET['game']);
+                // Use $gameName in your queries or logic
+            }
+            echo "<h1>". $gameName . "</h1>";
+
+            require_once('config.inc.php');
+
+            $mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+            $SQLReviewCount = "SELECT COUNT(*) AS count FROM Reviews WHERE Game = '$gameName'";
+            $SQL="SELECT * FROM Reviews WHERE Game = '$gameName'";
+            $SQLImage="SELECT * FROM GameNames WHERE Game = '$gameName'";
+            $SQLAvg = "SELECT AVG(Score) AS AverageScore FROM Reviews WHERE Game = '$gameName'";
+
+            $result = $mysqli->query($SQLImage);
+        ?>
         <!-- conatiner div -->
         <div class="game-container">
             <!-- Video/Image of Game -->
             <div>
-                <img src="images/game-image.jpg">
+                <?php
+                if ($output = $mysqli -> query($SQLImage)) {
+                    while ($obj=$output->fetch_object()) {
+                        echo "<img src='.$obj->ImageData.' alt='Game should be here' class='card-image'>";
+                    }
+                    $output -> free_result();
+                }
+                $result->free_result();
+                ?>
             </div>
 
             <!-- Information Container -->
             <div class="game-info-container">
                 <!-- Headings -->
                 <div class="heading-info">
-                    <?php
-                    if (isset($_GET['game'])) {
-                        $gameName = htmlspecialchars($_GET['game']);
-                        // Use $gameName in your queries or logic
-                    }
-                    echo "<h1>". $gameName . "</h1>";
-
-                    require_once('config.inc.php');
-
-                    $mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
-                    $SQLReviewCount = "SELECT COUNT(*) AS count FROM Reviews WHERE Game = '$gameName'";
-                    $SQL="SELECT * FROM Reviews WHERE Game = '$gameName'";
-                    $SQLAvg = "SELECT AVG(Score) AS AverageScore FROM Reviews WHERE Game = '$gameName'";
-                    ?>
                     <!-- <div>
                         <p>XBOX 360</p>
                         <button>View all Platforms</button>
