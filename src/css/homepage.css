@@ -6,7 +6,8 @@
     --background-color: black;
     --text-color: hsl(0, 0%, 100%);
     --background-color2: #1E1C1C;
-    --secondary-color: #FF4545
+    --secondary-color: #FF4545;
+    /*--background-color3: #212121;*/
 }
 /*the following code is the css for the "Video Games" Part*/
 body {
@@ -142,3 +143,104 @@ body {
         padding-right: 10px;
     }
 }
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items at the start */
+    gap: 16px;
+    width: 1200px; /* Set to 100% or adjust as necessary */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Optional for smooth scrolling */
+    padding: 10px; /* Optional padding */
+}
+
+
+.carousel .card-list {
+    display: flex; /* Use Flexbox instead of Grid */
+    gap: 20px; /* Space between cards */
+    padding: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping to a new row */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .card-item {
+    flex: 0 0 auto;
+    margin: 0 16px; /* Adds horizontal spacing on both sides */
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.carousel .card-item .card-link {
+    width: 200px; /* Width of the video game cover */
+    background: black ; /*var(--background-color2)*/
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+    transition: 0.2s ease;
+    border: 2px solid transparent; /* Add a border with an initial transparent color */
+}
+
+.carousel .card-item .card-link:hover {
+    border-color: #d9d9d9; /* Change border color on hover */
+}
+
+
+.carousel .card-link .card-image {
+    width: 100%; /* Match the card width */
+    height: 280px; /* Match the typical video game cover height */
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 8px; /* Optional for rounded corners */
+    background-color: #f0f0f0; /* Placeholder background */
+}
+
+.card-list .card-link .card-title {
+    font-size: 1rem;
+    color: #d9d9d9;
+    font-weight: 200;
+}
+
+.card-list .card-link .card-button{
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transform: rotate(-45deg);
+    background-color: var(--background-color2);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: var(--background-color2);
+    background: white;
+}
+
+.backBtn, .frontBtn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.backBtn:hover, .frontBtn:hover {
+    opacity: 1;
+}
+
+
+
+

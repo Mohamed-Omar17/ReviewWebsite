@@ -19,5 +19,5 @@ CREATE TABLE Reviews.GameNames (
 INSERT INTO GameNames (
     Game, Publisher
 )
-VALUES ('Mario Odyssey', 'Nintendo'), ('Call of Duty', 'Activision'), ('Fortnite', 'Epic Games');
+VALUES ('Mario Odyssey', 'Nintendo'), ('Call of Duty', 'Activision'), ('Fortnite', 'Epic Games'), ('Super Mario Bros.Wii', 'Nintendo');
 
