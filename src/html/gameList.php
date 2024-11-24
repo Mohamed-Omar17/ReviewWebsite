@@ -62,7 +62,7 @@ if ($result = $mysqli -> query($SQL)) {
         echo "<p>Game: " . htmlspecialchars($obj->Game) . "</p><br>";
         echo "</p>";
         echo "<p>" . htmlspecialchars($obj->Publisher) . "</p><br>";
-        echo "<button><a href='reviews.php?game=" . $gameName. "'>Reviews</a></button>";
+        echo "<button><a href='game-info.php?game=" . $gameName. "'>Reviews</a></button>";
         echo "</div>";
     }
     $result -> free_result();

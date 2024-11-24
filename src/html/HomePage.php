@@ -85,7 +85,7 @@
                     <a href="#" class="card-link">
                         <img src="../images/Games/New_Super_mario.jpg" alt="New Super Mario Bros" class="card-image">
                         <p class="card-title">Super Mario Bros. Wii</p>
-                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                        <button class="card-button material-symbols-rounded"><a href="game-info.php?game=Super%20Mario%20Bros.%20Wii"></a></a></button>
                     </a>
                 </li>
                 <li class="card-item">

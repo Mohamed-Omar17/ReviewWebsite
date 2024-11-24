@@ -317,7 +317,7 @@ hr {
 .user-review-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
 
     background-color: #2A2A2A;
 
@@ -327,7 +327,8 @@ hr {
 
     padding: 1rem;
 
-    max-width: 40vw;
+    min-width: 35vw;
+    max-width: 35vw;
 
     margin: 0 auto;
 
@@ -359,4 +360,8 @@ hr {
     text-decoration: underline;
     text-decoration-color: #FF4545;
     text-decoration-thickness: 2.5px;
+}
+
+#reviewBody {
+    margin-top: 100px;
 }
