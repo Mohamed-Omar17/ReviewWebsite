@@ -16,8 +16,27 @@ CREATE TABLE Reviews.GameNames (
     Game VARCHAR(255) NOT NULL,
     Publisher VARCHAR(255) NOT NULL
 );
-INSERT INTO GameNames (
-    Game, Publisher
-)
-VALUES ('Mario Odyssey', 'Nintendo'), ('Call of Duty', 'Activision'), ('Fortnite', 'Epic Games'), ('Super Mario Bros.Wii', 'Nintendo');
-
+INSERT INTO GameNames (Game, Publisher)
+VALUES
+    ('Super Mario Bros. Wii', 'Nintendo'),
+    ('Mario and Sonic Vancouver Olympic Games', 'Nintendo'),
+    ('Super Mario Galaxy', 'Nintendo'),
+    ('Wii Sports', 'Nintendo'),
+    ('Super Smash Bros', 'Nintendo'),
+    ('Donkey Kong Country Returns', 'Nintendo'),
+    ('Super Mario Galaxy 2', 'Nintendo'),
+    ('Red Dead Redemption II', 'Rockstar Games'),
+    ('Spider-Man', 'Sony Interactive Entertainment'),
+    ('Batman: Arkham City', 'Warner Bros. Interactive Entertainment'),
+    ('Jedi Fallen Order', 'Electronic Arts'),
+    ('The Witcher 3: Wild Hunt', 'CD Projekt'),
+    ('Spider-Man: Miles Morales', 'Sony Interactive Entertainment'),
+    ('Watch Dogs', 'Ubisoft'),
+    ('God of War 2018', 'Sony Interactive Entertainment'),
+    ('Fortnite: Battle Royale', 'Epic Games'),
+    ('Call of Duty: Black Ops 6', 'Activision'),
+    ('Far Cry 6', 'Ubisoft'),
+    ('Call of Duty: MW', 'Activision'),
+    ('Halo 5: Guardians', 'Microsoft'),
+    ('Borderlands 3', '2K Games'),
+    ('Call of Duty: Black Ops Cold War', 'Activision');
