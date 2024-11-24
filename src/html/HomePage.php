@@ -63,7 +63,7 @@
                 <p>Dive into in-depth reviews, discover hidden gems, and stay updated on the latest releases. XP Reviews is more than
                     just a site—it's a community where gamers connect, explore, and celebrate their shared passion for gaming.</p>
             </div>
-            <div id="HistoricTeamPhoto">
+            <div id="intro-photo">
                 <img src="../images/updown-pyramids-4k_1608815943-2048x1152.jpg" alt="Historic Team Photo">
             </div>
         </div>
