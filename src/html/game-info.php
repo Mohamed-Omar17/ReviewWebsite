@@ -57,7 +57,6 @@
                 $gameName = htmlspecialchars($_GET['game']);
                 // Use $gameName in your queries or logic
             }
-            echo "<h1>". $gameName . "</h1>";
 
             require_once('config.inc.php');
 
@@ -74,20 +73,25 @@
             <!-- Video/Image of Game -->
             <div>
                 <?php
-                if ($output = $mysqli -> query($SQLImage)) {
-                    while ($obj=$output->fetch_object()) {
-                        echo "<img src='.$obj->ImageData.' alt='Game should be here' class='card-image'>";
+                if ($result) {
+                    while ($obj=$result->fetch_object()) {
+                        if (isset($obj->ImageData)) {
+                            echo "<img src='" .$obj->ImageData. "' alt='Game Image' class='card-image'>";
+                        } else {
+                            echo "No image available";
+                        }
                     }
-                    $output -> free_result();
+                    $result -> free_result();
                 }
-                $result->free_result();
                 ?>
+
             </div>
 
             <!-- Information Container -->
             <div class="game-info-container">
                 <!-- Headings -->
                 <div class="heading-info">
+                    <?php echo "<h1>". $gameName . "</h1>"; ?>
                     <!-- <div>
                         <p>XBOX 360</p>
                         <button>View all Platforms</button>
