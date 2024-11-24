@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <link rel="icon" type="image/svg" href="../images/1.svg">
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="\css\gameInfo.css">
-        <link rel="stylesheet" href="\css\header.css">
+        <link rel="stylesheet" href="..\css\gameInfo.css">
+        <link rel="stylesheet" href="..\css\header.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
