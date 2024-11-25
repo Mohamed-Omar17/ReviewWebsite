@@ -136,11 +136,11 @@
                         else if ($averageScore <= 49 && $averageScore >= 25) {
                             echo "<p>Dreadful<p>";
                         }
+                        else if (is_null($row['AverageScore'])) {
+                            echo "";
+                        }
                         else if ($averageScore <= 24 && $averageScore >= 0) {
                             echo "<p>Stay away<p>";
-                        }
-                        else if ($averageScore == null) {
-                            echo "";
                         }
                         ?>
                         <!-- <p>Generally Favourable</p> -->
