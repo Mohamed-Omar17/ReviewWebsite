@@ -124,14 +124,23 @@
                         ?>
                         <p>USER SCORE</p>
                         <?php
-                        if ($averageScore>=75) {
-                            echo "<p>Generally Favourable<p>";
+                        if ($averageScore > 85) {
+                            echo "<p>Must Play</p>";
+                        }
+                        else if ($averageScore>=75 && $averageScore<=85) {
+                            echo "<p>Great<p>";
                         }
                         else if ($averageScore >=50 && $averageScore <= 74) {
-                            echo "<p>Mediocre<p>";
+                            echo "<p>Good<p>";
                         }
-                        else {
-                            echo "<p>Not Recommended<p>";
+                        else if ($averageScore <= 49 && $averageScore >= 25) {
+                            echo "<p>Dreadful<p>";
+                        }
+                        else if ($averageScore <= 24 && $averageScore >= 0) {
+                            echo "<p>Stay away<p>";
+                        }
+                        else if ($averageScore == null) {
+                            echo "";
                         }
                         ?>
                         <!-- <p>Generally Favourable</p> -->
@@ -224,8 +233,8 @@
                         echo "<h2>Reviews</h2>";
                         echo "</div>";
                         if ($output = $mysqli -> query($SQL)) {
+                            echo "<div class='review-grid' id='user-reviews-section'>";
                             while ($obj=$output->fetch_object()) {
-                                echo "<div class='review-grid' id='user-reviews-section'>";
                                 echo "<div class='user-review-container'>";
                                     echo "<div>";
                                     echo "<p class='game-score'>$obj->Score</p>";
@@ -240,8 +249,8 @@
                                     
                                     echo "</div>";
                                 echo "</div>";
-                                echo "</div>";
                             }
+                            echo "</div>";
                             $output -> free_result();
                         }
                     }
