@@ -85,7 +85,7 @@ if ($result = $mysqli->query($SQL)) {
 }
 
 echo "<div id='footer'>";
-echo "<footer><a href='addReview.php'><p></p><p>Add Your Own Review</p></a></footer>";
+echo "<footer><a href='addReview.php'><p>Add Your Own Review</p></a></footer>";
 echo "</div>";
 echo "</div>";
 

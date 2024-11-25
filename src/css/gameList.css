@@ -83,6 +83,10 @@ footer a {
     align-items: center; 
     justify-content: center;
 }
+
+footer a p {
+    margin: 0px;
+}
 footer a:hover {
     background-color: white;
     color: black;
