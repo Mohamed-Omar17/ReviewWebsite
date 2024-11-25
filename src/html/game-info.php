@@ -129,19 +129,19 @@
                             echo "<p>Must Play</p>";
                         }
                         else if ($averageScore>=75 && $averageScore<=85) {
-                            echo "<p>Great<p>";
+                            echo "<p>Great</p>";
                         }
                         else if ($averageScore >=50 && $averageScore <= 74) {
-                            echo "<p>Good<p>";
+                            echo "<p>Good</p>";
                         }
                         else if ($averageScore <= 49 && $averageScore >= 25) {
-                            echo "<p>Dreadful<p>";
+                            echo "<p>Dreadful</p>";
                         }
                         else if (is_null($row['AverageScore'])) {
                             echo "<p></p>";
                         }
                         else if ($averageScore <= 24 && $averageScore >= 0) {
-                            echo "<p>Stay away<p>";
+                            echo "<p>Stay away</p>";
                         }
                         ?>
                         <!-- <p>Generally Favourable</p> -->
