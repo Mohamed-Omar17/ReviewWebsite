@@ -57,15 +57,15 @@
     background-color: white;
     color: #000000;
 }
-.otr-logo {
+.game-logo {
     width: 95px;
     min-width: 96px;
     transition: transform 0.2s;
 }
-.otr-logo:hover {
+.game-logo:hover {
     transform: scale(1.04);
 }
-.otr-logo img {
+.game-logo img {
     width: 100%;
 }
 

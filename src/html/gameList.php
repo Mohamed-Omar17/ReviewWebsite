@@ -12,7 +12,7 @@
 <div class="navigation-bar">
         <div class="nav-shell">
             <ul>
-                <li class="otr-logo">
+                <li class="game-logo">
                     <img src=../images/1.svg alt="XP Review Logo"/>
                 </li>
                 <div id="title">
