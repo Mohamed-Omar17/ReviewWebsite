@@ -13,7 +13,7 @@
 <div class="navigation-bar">
         <div class="nav-shell">
             <ul>
-                <li class="otr-logo">
+                <li class="game-logo">
                     <img src=../images/1.svg alt="XP Review Logo"/>
                 </li>
                 <div id="title">
@@ -24,7 +24,7 @@
                         <a href="HomePage.php"> Home </a>
                     </li>
                     <li class="link">
-                        <a href="gameList.php"> Game Reviews </a>
+                        <a href="gameList.php"> Game List </a>
                     </li>
                     <li class="link">
                         <a href="addReview.php">Add Review</a>

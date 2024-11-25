@@ -5,7 +5,6 @@
     <title>XP Game Reviews</title>
   <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/gameList.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -13,7 +12,7 @@
 <div class="navigation-bar">
         <div class="nav-shell">
             <ul>
-                <li class="otr-logo">
+                <li class="game-logo">
                     <img src=../images/1.svg alt="XP Review Logo"/>
                 </li>
                 <div id="title">
@@ -24,13 +23,10 @@
                         <a href="HomePage.php"> Home </a>
                     </li>
                     <li class="link">
-                        <a href="gameList.php"> Game Reviews </a>
+                        <a href="gameList.php"> Game List </a>
                     </li>
                     <li class="link">
                         <a href="addReview.php">Add Review</a>
-                    </li>
-                    <li class="link">
-                        <a href="">Sign In</a>
                     </li>
                 </div>
             </ul>
@@ -78,9 +74,9 @@ if ($result = $mysqli->query($SQL)) {
 
         echo "<div class='games'>";
         echo "<a href='game-info.php?game=" . urlencode($gameName) . "' style='text-decoration: none; color: white; display: block; height: 100%;'>";
-        echo "<p class = 'nameText'>Game: " . $gameName . "</p>";
+        echo "<p class = 'nameText'> " . $gameName . "</p>";
         echo "<img src='" . $imagePath . "' alt='" . $gameName . " Image' class='game-image'/>";
-        echo "<p>Publisher: " . $publisher . "</p>";
+        echo "<p> " . $publisher . "</p>";
         echo "<p class='average-score-box'>" . $averageScore . "</p>"; 
         echo "</a>"; 
         echo "</div>";
