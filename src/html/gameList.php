@@ -57,9 +57,9 @@ if ($mysqli->connect_error) {
 
 if ($result = $mysqli->query($SQL)) {
     while ($obj = $result->fetch_object()) {
-        $gameName = htmlspecialchars($obj->Game);
-        $publisher = htmlspecialchars($obj->Publisher);
-        $imagePath = htmlspecialchars($obj->CoverImageData);
+        $gameName = $obj->Game;
+        $publisher = $obj->Publisher;
+        $imagePath = $obj->CoverImageData;
 
         // Query for Average Score
         $SQLAvg = "SELECT AVG(Score) AS AverageScore FROM Reviews WHERE Game = '$gameName'";
@@ -69,7 +69,7 @@ if ($result = $mysqli->query($SQL)) {
         if ($resultAvg) {
             $row = $resultAvg->fetch_assoc();
             if (!is_null($row['AverageScore'])) {
-                $averageScore = round($row['AverageScore'], 2); 
+                $averageScore = round($row['AverageScore']); 
             }
         } else {
             echo "<p>Error calculating average score for $gameName</p>";
