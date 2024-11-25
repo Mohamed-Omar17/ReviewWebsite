@@ -87,7 +87,7 @@
                     </a>
                 </li>
                 <li class="card-item">
-                    <a href="game-info.php?game=Mario%20and%20Sonic%20Vancouver%20Olympic&20Games" class="card-link">
+                    <a href="game-info.php?game=Mario%20and%20Sonic%20Vancouver%20Olympic%20Games" class="card-link">
                         <img src="../images/Games/Mario_&_Sonic.jpg" alt="Mario and Sonic Vancouver Olympic Games" class="card-image">
                         <p class="card-title">Mario and Sonic Vancouver Olympic Games</p>
                         <button class="card-button material-symbols-rounded">arrow_forward</button>
