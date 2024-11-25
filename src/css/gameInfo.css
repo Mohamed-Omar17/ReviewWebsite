@@ -337,8 +337,6 @@ hr {
     min-width: 35vw;
     max-width: 35vw;
 
-    margin: 0 auto;
-
     transition: transform 0.15s;
 }
 
