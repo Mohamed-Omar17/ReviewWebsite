@@ -260,7 +260,7 @@
                 </a>
             </li>
             <li class="card-item">
-                <a href="game-info.php?game=Last%20of%20Us" class="card-link">
+                <a href="game-info.php?game=The%20Last%20of%20Us" class="card-link">
                     <img src="../images/Games/The_Last_of_Us_Part_I_cover.jpg" alt="Last Of Us" class="card-image">
                     <p class="card-title">Last of Us</p>
                     <button class="card-button material-symbols-rounded">arrow_forward</button>
