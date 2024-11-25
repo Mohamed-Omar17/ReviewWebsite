@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>XP Game Reviews</title>
+    <link rel="icon" type="image/svg" href="../images/1.svg">
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="stylesheet" href="../css/header.css">
     <!-- Linking Google Fonts for Oswald and icons-->
@@ -19,7 +20,7 @@
     <div class="nav-shell">
         <ul>
             <li class="otr-logo">
-                <img src=../images/XP-Review-Logo.svg alt="XP Review Logo"/>
+                <img src=../images/1.svg alt="XP Review Logo"/>
             </li>
             <div id="title">
                 XP Reviews
@@ -33,9 +34,6 @@
                 </li>
                 <li class="link">
                     <a href="addReview.php">Add Review</a>
-                </li>
-                <li class="link">
-                    <a href="">Sign In</a>
                 </li>
             </div>
         </ul>
@@ -65,7 +63,7 @@
                 <p>Dive into in-depth reviews, discover hidden gems, and stay updated on the latest releases. XP Reviews is more than
                     just a site—it's a community where gamers connect, explore, and celebrate their shared passion for gaming.</p>
             </div>
-            <div id="HistoricTeamPhoto">
+            <div id="intro-photo">
                 <img src="../images/updown-pyramids-4k_1608815943-2048x1152.jpg" alt="Historic Team Photo">
             </div>
         </div>

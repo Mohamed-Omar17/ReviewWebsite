@@ -3,10 +3,10 @@
     <head>
         <title>Game Information</title>
         <meta charset="UTF-8">
-
+        <link rel="icon" type="image/svg" href="../images/1.svg">
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="\css\gameInfo.css">
-        <link rel="stylesheet" href="\css\header.css">
+        <link rel="stylesheet" href="..\css\gameInfo.css">
+        <link rel="stylesheet" href="..\css\header.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
         <div class="nav-shell">
             <ul>
                 <li class="otr-logo">
-                    <img src="../images/XP-Review-Logo.svg" alt="XP Review Logo"/>
+                    <img src="../images/1.svg" alt="XP Review Logo"/>
                 </li>
                 <div id="title">
                     XP Reviews: Games List
@@ -33,9 +33,6 @@
                     </li>
                     <li class="link">
                         <a href="addReview.php">Add Review</a>
-                    </li>
-                    <li class="link">
-                        <a href="">Sign In</a>
                     </li>
                 </div>
             </ul>

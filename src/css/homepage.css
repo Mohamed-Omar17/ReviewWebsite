@@ -62,7 +62,7 @@ body {
     padding-top: 60px;
 }
 
-#HistoricTeamPhoto {
+#intro-photo {
     display: flex;
     justify-content: flex-start;
     width: 50%;
@@ -70,7 +70,7 @@ body {
     height: 50%;
 }
 
-#HistoricTeamPhoto img {
+#intro-photo img {
     max-width: 100%;
     height: auto;
 }
@@ -111,7 +111,7 @@ body {
         align-items: center;
     }
 
-    #HistoricTeamPhoto,
+    #intro-photo,
     #intro-text {
         width: 100%;
         padding: 20px;
