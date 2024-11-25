@@ -138,7 +138,7 @@
                             echo "<p>Dreadful<p>";
                         }
                         else if (is_null($row['AverageScore'])) {
-                            echo "";
+                            echo "<p></p>";
                         }
                         else if ($averageScore <= 24 && $averageScore >= 0) {
                             echo "<p>Stay away<p>";
