@@ -141,7 +141,18 @@
                     <!-- Game Score -->
                     <div>
                         <?php
-                        echo $averageScore;
+                        $result = $mysqli->query($SQLAvg);
+                        if ($result) {
+                            $row = $result->fetch_assoc();
+                            if (is_null($row['AverageScore']))    {
+                                echo "<p>No Reviews</p>";
+                            }
+                            else {
+                                echo $averageScore;
+                            }
+                        } else {
+                            echo "Error calculating average.";
+                        }
                         ?>
                     </div>
 
