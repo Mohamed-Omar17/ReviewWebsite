@@ -113,7 +113,7 @@
                         if ($result) {
                             $row = $result->fetch_assoc();
                             if (is_null($row['AverageScore']))    {
-                                $averageScore = 0;
+                                $averageScore = null;
                             }
                             else {
                                 $averageScore = round($row['AverageScore']);
